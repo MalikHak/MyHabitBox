@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.util.Log;
 
 public class SplashScreenActivity extends AppCompatActivity {
 
@@ -19,7 +20,7 @@ public class SplashScreenActivity extends AppCompatActivity {
             public void run() {
 
 
-                Intent intent=new Intent(SplashScreenActivity.this,MainActivity.class);
+                Intent intent=new Intent(SplashScreenActivity.this, Login_activity.class);
                 startActivity(intent);
                 finish();
 
