@@ -22,15 +22,21 @@ public class MainActivity extends AppCompatActivity {
 
     String[] names = {"Rouhulla","Razia","Atika","Habil","Ziaqat","Said Rasool","Safiulla","Husna","Sahar","Faisal","Rouhulla","Razia","Atika","Habil","Ziaqat","Said Rasool","Safiulla","Rouhulla","Razia","Atika","Habil","Ziaqat","Said Rasool","Safiulla"};
     ListView listView;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
         listView = findViewById(R.id.lvNames);
+        //adapterts
         ArrayAdapter<String> adapter = new ArrayAdapter<String>(MainActivity.this, android.R.layout.simple_list_item_1, names);
 
         listView.setAdapter(adapter);
 
+
+
+        ///click
     listView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
         @Override
         public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
