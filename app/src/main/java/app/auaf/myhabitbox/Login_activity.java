@@ -24,7 +24,7 @@ public class Login_activity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
 
-                Intent intent=new Intent( Login_activity.this,MainActivity.class);
+                Intent intent=new Intent( Login_activity.this,ShowMoreDataWithRecyclerView.class);
                 startActivity(intent);
 
             }
